@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<title>pingstory</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #FFF;padding-bottom: 0px;">
+		<div class="chatbox__header">
+			<div class="chatbox__headerText">
+				<img src="https://www.sackettwaconia.com/wp-content/uploads/default-profile.png" class="rounded-circle" height="35" alt="">&nbsp;&nbsp;
+				<div class="headerText"></div>
+				<div class="chatbox__onlineDot"></div>
+			</div>
+		</div>
+	</nav>
+	<br><br>
+	<div class="chatbox__messages">
+		<div class="chat" id="chat"></div>
+	</div>
+	<br><br>
+	<footer class="footer">
+		<div class="chatbox__inputPanel">
+			<input class="chatbox__input" v-model="newMessage" @keyup.enter="send" placeholder="Aa" readonly/>
+		</div>
+	</footer>
+	<script src="story_hoo.js" charset="utf-8"></script>
+	<script>
+	$("html, body").animate({ scrollTop: "300px" });
+	</script>
+</body>
+</html>
