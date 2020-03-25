@@ -10,32 +10,39 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
 </head>
 <body>
-  <div class="flex-container">
-    <div style="flex-grow: 8">
-      <img class="img-valign" src="Asset/Icons/back.png" height="35">
-    </div>
-    <div style="flex-grow: 8">
-      <img class="img-valign" src="Asset/Images/profile-ara.jpg" height="35">
-      <span>Ratu</span><span class="online">oo</span>
-    </div>
-    <div style="flex-grow: 0" class="dropdown">
-      <button class="dropbtn"><img class="img-valign" src="Asset/Icons/more.png" height="35"></button>
-      <div class="dropdown-content">
-        <a href="#"><img class="img-valign" src="Asset/Icons/info.png" height="20"> Info</a>
-        <a href="#"><img class="img-valign" src="Asset/Icons/report.png" height="20"> Report</a>
+  <div class="stori-check">
+    <div class="flex-container">
+      <div style="flex-grow: 8">
+        <img class="img-valign" src="Asset/Icons/back.png" height="35">
+      </div>
+      <div style="flex-grow: 8">
+        <img class="img-valign" src="Asset/Images/profile-ara.jpg" height="35">
+        <span>Ratu</span><span class="online">oo</span>
+      </div>
+      <div style="flex-grow: 0" class="dropdown">
+        <button class="dropbtn"><img class="img-valign" src="Asset/Icons/more.png" height="35"></button>
+        <div class="dropdown-content">
+          <a href="#"><img class="img-valign" src="Asset/Icons/info.png" height="20"> Info</a>
+          <a href="#"><img class="img-valign" src="Asset/Icons/report.png" height="20"> Report</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="chat">
-    <div class="chat-container">
-      <div class="chat-listcontainer">
-        <ul class="chat-message-list"></ul>
+    <div class="chat">
+      <div class="chat-container">
+        <div class="chat-listcontainer">
+          <ul class="chat-message-list"></ul>
+        </div>
       </div>
     </div>
+    <div class="wrapper">
+      <div><img class="logo" src="Asset/Images/stori-logo.svg" height="25"></div>
+    </div>
+    <script src="setup.js" charset="utf-8"></script>
   </div>
-  <div class="wrapper">
-    <div><img class="logo" src="Asset/Images/stori-logo.svg" height="25"></div>
+  <div class="stori-error">
+    <br><br>
+    <img src="Asset/Images/stori-logo.svg" height="50">
+    <h1 align="center">Sorry, STORI does not currently support this screen size :(</h1>
   </div>
-  <script src="setup.js" charset="utf-8"></script>
 </body>
 </html>
