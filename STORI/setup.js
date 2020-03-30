@@ -1,18 +1,20 @@
 var chatMessages =
 [{
   name: "ms",
-  msg: "Ini adalah cuplikan dari dialog cerita #RatuRCS2 di Instagram @relationshipchat.line.",
+  msg: "Ini adalah cuplikan dari dialog cerita #RatuRCS2 di Instagram @relationshipchat.line",
   delay: 0,
   align: "center",
   showTime: false,
-  time: "19:58"
+  time: "19:58",
+  people: "Akbar"
 },{
   name: "ms0",
   msg: "Hari ini",
   delay: 0,
   align: "center",
   showTime: false,
-  time: "19:58"
+  time: "19:58",
+  people: "Akbar"
 },
 {
   name: "ms1",
@@ -20,7 +22,8 @@ var chatMessages =
   delay: 1000,
   align: "left",
   showTime: true,
-  time: "19:58"
+  time: "19:58",
+  people: "Akbar"
 },
 {
   name: "ms2",
@@ -28,7 +31,8 @@ var chatMessages =
   delay: 2000,
   align: "right",
   showTime: true,
-  time: "19:58"
+  time: "19:58",
+  people: "Akbar"
 },
 {
   name: "ms3",
@@ -36,7 +40,8 @@ var chatMessages =
   delay: 1000,
   align: "left",
   showTime: true,
-  time: "19:58"
+  time: "19:58",
+  people: "Akbar"
 },
 {
   name: "ms4",
@@ -44,7 +49,8 @@ var chatMessages =
   delay: 3000,
   align: "left",
   showTime: true,
-  time: "19:58"
+  time: "19:58",
+  people: "Akbar"
 },
 {
   name: "ms5",
@@ -52,7 +58,8 @@ var chatMessages =
   delay: 5000,
   align: "left",
   showTime: true,
-  time: "19:58"
+  time: "19:58",
+  people: "Akbar"
 },
 {
   name: "ms6",
@@ -60,7 +67,8 @@ var chatMessages =
   delay: 2000,
   align: "right",
   showTime: false,
-  time: "19:58"
+  time: "19:58",
+  people: "Akbar"
 },
 {
   name: "ms7",
@@ -68,7 +76,8 @@ var chatMessages =
   delay: 5000,
   align: "left",
   showTime: false,
-  time: "19:58"
+  time: "19:58",
+  people: "Akbar"
 },
 {
   name: "ms8",
@@ -76,7 +85,8 @@ var chatMessages =
   delay: 1000,
   align: "right",
   showTime: true,
-  time: "19:58"
+  time: "19:58",
+  people: "Akbar"
 },
 {
   name: "ms9",
@@ -84,7 +94,8 @@ var chatMessages =
   delay: 1000,
   align: "left",
   showTime: true,
-  time: "19:58"
+  time: "19:58",
+  people: "Akbar"
 }];
 
 var chatDelay = 0;
@@ -104,9 +115,9 @@ $.each(chatMessages, function(index, obj) {
   msginner = ".messageinner-" + obj.name;
   spinner = ".sp-" + obj.name;
   if (obj.showTime == true) {
-    chatTimeString = "<span class='message-time'>" + obj.time + "</span>";
+    chatTimeString = "<span class='message-time'><b>"+ obj.people + "</b>&nbsp; | &nbsp;" + obj.time + "</span>";
   }
-  $(".chat-message-list").append("<li class='message-" + obj.align + " " + obj.name + "' hidden><div class='sp-" + obj.name + "'><span class='spinme-" + obj.align + "'><div class='spinner'><div class='bounce1'></div><div class='bounce2'></div><div class='bounce3'></div></div></span></div><div class='messageinner-" + obj.name + "' hidden><span class='message-text'>" + obj.msg + "</span>" + chatTimeString + "</div></li>");
+  $(".chat-message-list").append("<li class='message-" + obj.align + " " + obj.name + "' hidden><div class='sp-" + obj.name + "'><span class='spinme-" + obj.align + "'><div class='spinner'><div class='bounce1'></div><div class='bounce2'></div><div class='bounce3'></div></div></span></div><div class='messageinner-" + obj.name + "' hidden><span class='message-text'>" + obj.msg + "</span>" + chatTimeString +"</div></li>");
   $(msgname).delay(chatDelay).fadeIn();
   $(spinner).delay(chatDelay2).hide(1);
   $(msginner).delay(chatDelay3).fadeIn();
