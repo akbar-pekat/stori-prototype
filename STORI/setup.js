@@ -1,102 +1,175 @@
 var chatMessages =
 [{
-  name: "ms",
-  msg: "Ini adalah cuplikan dari dialog cerita #RatuRCS2 di Instagram @relationshipchat.line",
-  delay: 0,
-  align: "center",
-  showTime: false,
-  time: "19:58",
-  people: "Akbar"
-},{
   name: "ms0",
-  msg: "Hari ini",
+  msg: "Ini adalah cuplikan dialog dari cerita-obrolan berjudul TERNYATA.",
   delay: 0,
   align: "center",
-  showTime: false,
-  time: "19:58",
-  people: "Akbar"
-},
-{
+  showTime: true,
+  time: "11:58",
+  people: ""
+},{
   name: "ms1",
-  msg: "Kak Ratu, butuh kerjaan gak?",
+  msg: "Sayaang, kamu dimana?",
   delay: 1000,
   align: "left",
   showTime: true,
-  time: "19:58",
-  people: "Akbar"
+  time: "11:58",
+  people: "Rara"
 },
 {
   name: "ms2",
-  msg: "secara ga langsung ngatain gue pengangguran ya lo?!",
-  delay: 2000,
-  align: "right",
+  msg: "Kamu jadi ke Villa kan?",
+  delay: 1000,
+  align: "left",
   showTime: true,
-  time: "19:58",
-  people: "Akbar"
+  time: "11:58",
+  people: "Rara"
 },
 {
   name: "ms3",
-  msg: "Diih engga 😑",
-  delay: 1000,
-  align: "left",
+  msg: "Iyaa, ini udah dijalan kesana kok.",
+  delay: 2000,
+  align: "right",
   showTime: true,
-  time: "19:58",
-  people: "Akbar"
+  time: "11:59",
+  people: "Dirga"
 },
 {
   name: "ms4",
-  msg: "Gue ada nemu lowongan kerjaan nih, butuh tenaga kerja lumayan banyak",
-  delay: 3000,
+  msg: "Ohh iyaa",
+  delay: 0,
   align: "left",
   showTime: true,
-  time: "19:58",
-  people: "Akbar"
+  time: "11:59",
+  people: "Rara"
 },
 {
   name: "ms5",
-  msg: "Syaratnya min s1 terus ipknya harus tinggi, lo cocok deh pasti. Banyak bidang yg dicari",
-  delay: 5000,
-  align: "left",
+  msg: "Kamu lagi ngapain yang?",
+  delay: 1000,
+  align: "right",
   showTime: true,
-  time: "19:58",
-  people: "Akbar"
+  time: "11:59",
+  people: "Dirga"
 },
 {
   name: "ms6",
-  msg: "Dapet lowongan kerjaan dari mana? Lo ga ngelamar?",
-  delay: 2000,
-  align: "right",
-  showTime: false,
-  time: "19:58",
-  people: "Akbar"
+  msg: "Lagi main HP aja nih..",
+  delay: 1000,
+  align: "left",
+  showTime: true,
+  time: "12:00",
+  people: "Rara"
 },
 {
   name: "ms7",
-  msg: "Gue blm lulus kak, lo aja nih, taruh lamaran disitu kali aja di interview terus keterima",
-  delay: 5000,
-  align: "left",
-  showTime: false,
-  time: "19:58",
-  people: "Akbar"
-},
-{
-  name: "ms8",
-  msg: "Yaudah boleh deh mana alamatnya",
+  msg: "Ngeliatin fotoku yaaaa 😘",
   delay: 1000,
   align: "right",
   showTime: true,
-  time: "19:58",
-  people: "Akbar"
+  time: "12:00",
+  people: "Dirga"
+},
+{
+  name: "ms8",
+  msg: "Gini nih, derita punya pacar narsis pake banget 😫",
+  delay: 3000,
+  align: "left",
+  showTime: true,
+  time: "12:00",
+  people: "Rara"
 },
 {
   name: "ms9",
-  msg: "Ntar gue kirim",
+  msg: "Kok gitu sih sayaang.. 😥",
+  delay: 1000,
+  align: "right",
+  showTime: true,
+  time: "12:01",
+  people: "Dirga"
+},
+{
+  name: "ms10",
+  msg: "Hahaha",
+  delay: 0,
+  align: "left",
+  showTime: true,
+  time: "12:01",
+  people: "Rara"
+},
+{
+  name: "ms11",
+  msg: "Yaudah, jangan main HP lagi..",
   delay: 1000,
   align: "left",
   showTime: true,
-  time: "19:58",
-  people: "Akbar"
-}];
+  time: "12:01",
+  people: "Rara"
+},
+{
+  name: "ms12",
+  msg: "Hati hati nyetirnya, jangan ngebut ngebut yaah 😘",
+  delay: 2000,
+  align: "left",
+  showTime: true,
+  time: "12:02",
+  people: "Rara"
+},
+{
+  name: "ms13",
+  msg: "Siap",
+  delay: 0,
+  align: "right",
+  showTime: true,
+  time: "12:02",
+  people: "Dirga"
+},
+{
+  name: "ms14",
+  msg: "Kamu kesana sendirian aja yang?",
+  delay: 1000,
+  align: "left",
+  showTime: true,
+  time: "12:02",
+  people: "Rara"
+},
+{
+  name: "ms15",
+  msg: "Iya nih",
+  delay: 0,
+  align: "right",
+  showTime: true,
+  time: "12:03",
+  people: "Dirga"
+},
+{
+  name: "ms16",
+  msg: "Kenapa? Mau ikut yaa?",
+  delay: 1000,
+  align: "right",
+  showTime: true,
+  time: "12:03",
+  people: "Dirga"
+},
+{
+  name: "ms17",
+  msg: "Itu mah maunya kamu dong..",
+  delay: 1000,
+  align: "left",
+  showTime: true,
+  time: "12:03",
+  people: "Rara"
+},
+{
+  name: "ms18",
+  msg: "Bersambung",
+  delay: 1000,
+  align: "center",
+  showTime: true,
+  time: "12:04",
+  people: ""
+}
+];
 
 var chatDelay = 0;
 
