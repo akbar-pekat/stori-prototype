@@ -126,6 +126,9 @@ body {
   color: #333;
   font-family: 'Sen', sans-serif;
 }
+.message-center .message-time {
+  display: none;
+}
 
 .message-left {
   text-align: left;
