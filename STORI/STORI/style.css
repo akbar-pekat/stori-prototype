@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background-image: url("https://i.pinimg.com/originals/51/ed/c0/51edc046eb80046ee4755ee71d0f19ca.jpg");
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa;
+  color: #000;
+  height: 50px;
+  padding: 5px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+}
+
+.navbar-top .left {
+  flex-grow: 1;
+  padding: 10px 0;
+}
+.navbar-top .left img, .navbar-top .right img  {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar-top .center {
+  flex-grow: 1;
+  display: inline-block;
+}
+.navbar-top .center img {
+  border-radius: 50%;
+}
+.navbar-top .center span {
+  margin-left: 5px;
+}
+.navbar-top .center .online {
+  background: #28B62C;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-animation: pulse-animation 2s infinite linear;
+}
+@-webkit-keyframes pulse-animation {
+  0% { -webkit-transform: scale(1); }
+  25% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(1.2) }
+  75% { -webkit-transform: scale(1); }
+  100% { -webkit-transform: scale(1); }
+}
+
+.navbar-top .right {
+  padding: 10px 0;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: center;
+  background-color: #ededed;
+  color: #000;
+  height: 50px;
+  padding: 5px;
+  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.10);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar-bottom .left {
+  flex-grow: 0;
+  padding: 10px 0px;
+  margin-left: 10px;
+}
+.navbar-bottom .center {
+  flex-grow: 1;
+  padding: 5px 20px;
+}
+.navbar-bottom .center input {
+  height: 35px;
+  width: 100%;
+  border-radius: 25px;
+  border: solid #ededed;
+  padding: 0px;
+  background-color: #FFF;
+  padding-left: 10px;
+}
+.navbar-bottom .right {
+  padding: 10px 0;
+  margin-right: 20px;
+}
+
+.chat ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.chat ::-webkit-scrollbar {
+  display: none;
+}
+
+.message-left .message-time {
+  display: block;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 4px;
+  color: #333;
+  font-family: 'Sen', sans-serif;
+}
+.message-right .message-time {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 4px;
+  color: #333;
+  font-family: 'Sen', sans-serif;
+}
+.message-center .message-time {
+  display: none;
+}
+
+.message-left {
+  text-align: left;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  max-width: 645px;
+}
+.message-left .message-text {
+  max-width: 80%;
+  display: inline-block;
+  background: #fff;
+  padding: 15px;
+  font-size: 14px;
+  color: #000;
+  border-radius: 30px;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+
+.message-right {
+  text-align: right;
+  margin-bottom: 16px;
+  margin-top: 10px;
+}
+.message-right .message-text {
+  line-height: 1.5em;
+  display: inline-block;
+  background: #333;
+  padding: 15px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 30px;
+  line-height: 1.5em;
+  font-weight: 100;
+  text-align: left;
+}
+
+.message-center {
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 10px;
+}
+.message-center .message-text {
+  max-width: 500px;
+  display: inline-block;
+  background: rgba(238, 238, 238, 0.8);
+  padding: 10px;
+  font-size: 14px;
+  color: #adadad;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.responsif {
+  height: 90% !important;
+
+}
+.ren {
+  height: 5%;
+}
+
+.chat {
+  background: transparent;
+  height: 95%;
+  overflow: hidden;
+}
+
+.chat-container {
+  height: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* NOTE: Above 3in */
+@media only screen and (min-height: 0px) and (max-height: 384px) {
+  .stori-check {
+    display: none;
+  }
+  .stori-error {
+    display: block;
+  }
+}
+/* NOTE: 4in - 5in  */
+@media only screen and (min-height: 385px) and (max-height: 480px) {
+  .chat {
+    background: transparent;
+    height: 84.5vh !important;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 84.5%;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .stori-error {
+    display: none;
+  }
+}
+/* NOTE: 4in - above  */
+@media only screen and (min-height: 481px) and (max-height: 567px) {
+  .chat {
+    background: transparent;
+    height: 87.9vh !important;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 89%;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .stori-error {
+    display: none;
+  }
+}
+/* NOTE: IP5/SE */
+@media only screen and (min-height: 568px) and (max-height: 639px) {
+  .chat {
+    background: transparent;
+    height: 89.5vh !important;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 88%;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .stori-error {
+    display: none;
+  }
+}
+/* NOTE: S5 */
+@media only screen and (min-height: 640px) and (max-height: 730px) {
+  .chat {
+    background: transparent;
+    height: 90.7vh !important;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 89%;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .stori-error {
+    display: none;
+  }
+}
+/* NOTE: Pixel2 */
+@media only screen and (min-height: 731px) and (max-height: 735px) {
+  .chat {
+    background: transparent;
+    height: 91.8vh !important;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 91%;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .stori-error {
+    display: none;
+  }
+}
+/* NOTE: IP6/7/8 Plus */
+@media only screen and (min-height: 736px) and (max-height: 811px) {
+  .chat {
+    background: transparent;
+    height: 91.9vh !important;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 91%;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .stori-error {
+    display: none;
+  }
+}
+/* NOTE: IP X */
+@media only screen and (min-height: 812px) and (max-height: 822px) {
+  .chat {
+    background: transparent;
+    height: 92.6vh !important;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 92%;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .stori-error {
+    display: none;
+  }
+}
+/* NOTE: Pixel2XL */
+@media only screen and (min-height: 823px) and (max-height: 899px) {
+  .chat {
+    background: transparent;
+    height: 92.7vh !important;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 92%;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .stori-error {
+    display: none;
+  }
+}
+/* NOTE: Laptop H900 */
+@media only screen and (min-height: 900px) and (max-height: 1023px) {
+  .chat {
+    background: transparent;
+    height: 93vh !important;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 93%;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .stori-error {
+    display: none;
+  }
+}
+/* NOTE: Ipad */
+@media only screen and (min-height: 1024px) and (max-height: 1365px) {
+  .chat {
+    background: transparent;
+    height: 94vh !important;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 94%;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .stori-error {
+    display: none;
+  }
+}
+/* NOTE: Ipad Pro and Above 1366px */
+@media only screen and (min-height: 1366px) {
+  .chat {
+    background: transparent;
+    height: 95vh !important;
+    overflow: hidden;
+  }
+  .chat-container {
+    height: 96%;
+    max-height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .stori-error {
+    display: none;
+  }
+}
+
+.spinme-right {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 14px;
+  border-radius: 30px;
+  line-height: 1.25em;
+  font-weight: 100;
+  opacity: 0.2;
+}
+
+.spinme-left {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #ccc;
+  border-radius: 30px;
+  line-height: 1.25em;
+  font-weight: 100;
+  opacity: 0.2;
+}
+
+.spinme-center {
+  display: none;
+}
+
+.spinner {
+  margin: 0;
+  width: 30px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  background: rgba(0,0,0,1);
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0)
+  }
+  40% {
+    -webkit-transform: scale(1.0)
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
