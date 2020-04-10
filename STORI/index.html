@@ -4,9 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>STORI</title>
-  <link rel="shortcut icon" href="stori-logo.svg">
+  <link rel="shortcut icon" href="Asset/SVG/stori-logo.svg">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -16,24 +15,24 @@
   <div id="all">
     <div class="rows">
       <div class="logo-rows">
-        <a class="icon" href="https://akbar-pekat.github.io/stori-prototype/STORI/" draggable="false">
-          <img src="stori-logo.png" height="50" draggable="false">
+        <a class="icon" href="/STORI" draggable="false">
+          <img src="Asset/IMG/stori-logo.png" height="50" draggable="false">
         </a>
       </div>
     </div>
     <br>
     <div class="container">
       <div class="card bg-white border-0 shadow">
-        <div class="card-body">
+        <div class="card-body text-center">
           <h1>SELAMAT DATANG!</h1>
-          <p>Untuk mencoba versi prototype dari STORI, klik link berikut : <a href="https://akbar-pekat.github.io/stori-prototype/STORI/STORI/" style="text-decoration:none;">prototype version</a></p>
+          <p>Untuk mencoba versi prototype dari STORI, klik link berikut :<br><a href="/STORI/STORI" style="text-decoration:none;">Prototype Version</a></p>
         </div>
       </div>
     </div>
     <br>
     <div class="menu">
       <div style="flex-grow: 0">
-        <a href="https://akbar-pekat.github.io/stori-prototype/STORI/" class="icon">
+        <a href="/STORI" class="icon">
           <svg id="Capa_1" enable-background="new 0 0 512 512" height="30" viewBox="0 0 512 512" width="30" xmlns="http://www.w3.org/2000/svg"><g><path d="m506.144 241.858-236.002-236c-7.811-7.811-20.474-7.811-28.284 0l-236.002 236c-9.989 9.991-6.738 26.953 6.264 32.525l58.509 25.075 9.394 193.512c.515 10.656 9.306 19.03 19.975 19.03h312.003c10.669 0 19.46-8.374 19.977-19.03l9.394-193.512 58.509-25.075c12.985-5.565 16.265-22.522 6.263-32.525zm-207.644 230.142h-85.001v-115.999h85.001zm115.623-204.383c-7.031 3.013-11.727 9.772-12.098 17.413l-9.077 186.97h-54.448v-135.999c0-11.046-8.954-20-20-20h-125.001c-11.046 0-20 8.954-20 20v135.999h-54.447l-9.076-186.97c-.371-7.641-5.067-14.4-12.098-17.413l-42.848-18.363 200.97-200.969 200.971 200.97z"/></g></svg>
         </a>
       </div>
@@ -57,28 +56,34 @@
     <div class="panel_category">
       <ul style="padding-left: 0px;">
         <li>
-          <div class="badge badge-secondary">Romantis</div>
+          <div class="badge badge-pill" style="background-color:#30a4c7;color:#fff;">
+            <img src="Asset/SVG/romance.svg" height="40" draggable="false">
+            Romantis
+          </div>
         </li>
         <li>
-          <div class="badge badge-secondary">Persahabatan</div>
+          <div class="badge badge-pill" style="background-color:#012d4e;color:#fff;">
+            <img src="Asset/SVG/horror.svg" height="40" draggable="false">
+            Horror
+          </div>
         </li>
         <li>
-          <div class="badge badge-secondary">Cinta Sejati</div>
+          <div class="badge badge-pill" style="background-color:#434d70;color:#fff;">
+            <img src="Asset/SVG/comedy.svg" height="40" draggable="false">
+            Comedy
+          </div>
         </li>
         <li>
-          <div class="badge badge-secondary">Cinta Segitiga</div>
+          <div class="badge badge-pill" style="background-color:#62dafa;color:#fff;">
+            <img src="Asset/SVG/riddle.svg" height="40" draggable="false">
+            Riddle (Mystery)
+          </div>
         </li>
         <li>
-          <div class="badge badge-secondary">Horror</div>
-        </li>
-        <li>
-          <div class="badge badge-secondary">Riddle Thriller</div>
-        </li>
-        <li>
-          <div class="badge badge-secondary">Cinta Sejati</div>
-        </li>
-        <li>
-          <div class="badge badge-secondary">Fiksi Pendek</div>
+          <div class="badge badge-pill" style="background-color:#fdb44c;color:#fff;">
+            <img src="Asset/SVG/sfh.svg" height="40" draggable="false">
+            #StudyfromHome
+          </div>
         </li>
       </ul>
     </div>
@@ -87,7 +92,7 @@
     </div>
   </div>
   <script src="script.js" charset="utf-8"></script>
-  <script src="index.umd.min.js"></script>
+  <script src="Asset/FILE/index.umd.min.js"></script>
   <script>
     PullToRefresh.init({
       mainElement: '#all',
